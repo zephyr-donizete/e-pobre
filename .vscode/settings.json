@@ -1,3 +1,4 @@
 {
-    "C_Cpp.default.compileCommands": "build/compile_commands.json"
+    "cmake.configureOnOpen": false,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
 }
