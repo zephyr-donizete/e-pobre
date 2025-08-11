@@ -4,6 +4,11 @@
             "path": "."
         }
     ],
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.cpptools-extension-pack"
+        ],
+    },
     "tasks": {
         "version": "2.0.0",
         "tasks": [
@@ -17,6 +22,8 @@
                 "command": "${userHome}/zephyrproject/.venv/bin/west",
                 "args": [
                     "build",
+                    "-p",
+                    "auto",
                     "-b",
                     "native_sim/native/64"
                 ]
@@ -52,5 +59,10 @@
                 ]
             }
         ]
+    },
+    "settings": {
+        "files.associations": {
+            "kernel.h": "c"
+        }
     }
 }
